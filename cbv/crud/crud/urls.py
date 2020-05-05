@@ -21,6 +21,6 @@ import classcrud.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', classcrud.views.welcome, name="welcome"),
+    # path('', classcrud.views.welcome, name="welcome"),
     path('classcrud/', include(classcrud.urls)),
 ]
