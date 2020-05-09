@@ -12,6 +12,12 @@ class BlogView(ListView):
     model = ClassBlog
     # html 템플릿 : 블로그 리스트를 담은 html : (소문자모델)_list.html
 
+    # defalut 탬플릿 이름이 아닌 다른 이름으로 할때
+    # template_name = 'classcrud/list.html'
+
+    # 탬플릿으로 보내줄 모델이 여러가지 인 경우(서로 다른 객체 목록을 구분하는 방법)
+    # context_object_name = 'blog_list'
+
 class BlogCreate(CreateView):
     model = ClassBlog
     fields = ['title', 'body']
